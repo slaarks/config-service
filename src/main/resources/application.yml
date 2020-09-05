@@ -19,3 +19,9 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://localhost:1717/eureka/
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"      
