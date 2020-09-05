@@ -1,6 +1,6 @@
 server:
   port: 1212
-  
+
 spring:
   cloud:
     config:
@@ -10,3 +10,12 @@ spring:
           search-paths: product-service, person-service, order-service
           username: USERNAME
           password: PASSWORD
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:1717/eureka/
